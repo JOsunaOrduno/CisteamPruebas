@@ -2,6 +2,7 @@
 <html lang="es">
     <link rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    
   <link rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
   <link rel="stylesheet"
@@ -15,6 +16,7 @@
     <title>Prueba</title>
     <link rel="shortcut icon" href="Img/LogoMini.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/Estilos.css">
+    <link rel="stylesheet" href="CSS/login.css">
 </head>
 <style>
 @media screen and (max-width:400px)
@@ -26,224 +28,146 @@
 }
 </style>  
 <body>
-    
     <header>
         <!--Pop up Sing Up-->
         <dialog class="singup-form" id="Abierto">
             <h1>Sing Up Now</h1>
             <section>
-            <input type="Name" class="EnterName" placeholder="Your Name">
-        </section>
+                <input type="Name" class="EnterName" placeholder="Your Name">
+            </section>
             <input type="Mail" class="EnterMail" placeholder="Your E-mail">
             <p><span><input type="checkbox"class="chkbox"></span>Estoy de acuerdo con los términos de servicio</p>
             <button type="button" class="btnsingUp">Sing up</button>
-    <hr>
-    <h2 class="or">Or</h2>
-    <button type="button" class="btnsingIn">Access with Twitter</button>
-    <p class="doyou">Do you have an account? <a href="#">Sing in</a></p>
+            
+            <hr>
+
+            <h2 class="or">Or</h2>
+            <button type="button" class="btnsingIn">Access with Twitter</button>
+            <p class="doyou">Do you have an account? <a href="#">Sing in</a></p>
         </dialog>
         <!--Pop up Sing In-->
         <dialog class="singin-form" id="Abiertosi">
-            <h1>Welcome back</h1>
+                <h1>Welcome back</h1>
+                <section>
+                <input type="Name" class="EnterName" placeholder="Name/E-mail">
+            </section>
             <section>
-            <input type="Name" class="EnterName" placeholder="Name/E-mail">
-        </section>
-        <section>
-            <input type="Mail" class="EnterMail" placeholder="Password">
-        </section>
-           <!-- <p><span><input type="checkbox"class="chkbox"></span>Estoy de acuerdo con los términos de servicio</p>-->
+                <input type="Mail" class="EnterMail" placeholder="Password">
+            </section>
+            <!-- <p><span><input type="checkbox"class="chkbox"></span>Estoy de acuerdo con los términos de servicio</p>-->
             <button type="button" class="btnsingUp">Sing in</button>
-    <hr>
-    <h2 class="or">Or</h2>
-    <button type="button" class="btnsingIn2">Access with Twitter</button>
-    <p class="doyou">Do you still don't have an account? <a href="#">Sing up</a></p>
+    
+            <hr>
+
+            <h2 class="or">Or</h2>
+            <button type="button" class="btnsingIn2">Access with Twitter</button>
+            <p class="doyou">Do you still don't have an account? <a href="#">Sing up</a></p>
         </dialog>
 
-        <nav>       
-           
-        <label><img src="Img/cisteam_aguila.png" alt=""  class="logo"></label>
-        <a href="#">Inicio</a>
-        <a href="#">Nosotros</a>
-        <a href="#">Servicios</a>
-        <a href="#">Contacto</a>
-        <a href="#">Clientes</a>
-        <label>
-            <input class="buscar" type="search" placeholder="find in Ciste@m" required>
-            <i class="fas fa-search">   </i>
-         </input>
-       </label>
-       <section>
-       <label class="lbl2">
-        <img src="Img/lupa1.png" alt=""  class="lupa">           
-    </label>
-   <ul class="singup" id=AbrirSU>
-                Sing up
-       </ul>
-    <ul class="singin" id=AbrirSI>
-         Sing in
-        </ul>
-    </nav>
-</div>
+        <nav>        
+            <label><img src="Img/cisteam_aguila.png" alt=""  class="logo"></label>
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
+            <a href="#">Clientes</a>
+            <label>
+                <input class="buscar" type="search" placeholder="find in Ciste@m" required>
+                <i class="fas fa-search"></i>
+                </input>
+            </label>
+            <label class="lbl2">
+                <img src="Img/lupa1.png" alt=""  class="lupa">           
+            </label>
+            <ul class="singup" id=AbrirSU>
+                        Sing up
+            </ul>
+            <ul class="singin" id=AbrirSI>
+                Sing in
+            </ul>
+        </nav>
 
-    <section class="textos-header">
-        <h1>Ciste<font color="#2ED5D9">@</font>m</h1>
-        <h2>Facilitamos tu vida</h2>
-    </section>
-    <div class="wave" style="height: 150px; overflow: hidden;" >
-        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);">
-        </path></svg></div>
-        <div class="mundo">         
+        <section class="textos-header">
+            <h1>Ciste<font color="#2ED5D9">@</font>m</h1>
+            <h2>Facilitamos tu vida</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;" >
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);">
+            </path></svg>
         </div>
-        <div class="astron1">
-        </div>
+        <div class="mundo"></div>
+        <div class="astron1"></div>
     
     </header>
     
     <main>
         <section class="Nuestros_Serv">
-        <h2 class="titulo">Servicios</h2>
-        <div class="contenedor-servicios">
-         <img src="Img/pc34.png" alt="" class="imagen-servicios">         
-          <div class="contenedor-textos">
-            <h3  class="subtitulo">   
-            </span>Desarrollo de software
-            </h3>
-            <p class="parrafos1">
-                Desarrollo de software a la medida para agilizar procesos, optimizar trabajo y los recursos de tu empresa
-            </p>
-            <h3  class="subtitulo">   
-            </span>Conectividad empresarial
-            </h3>
-            <p class="parrafos1">
-                Servicios en Red, Internet e Intranet, Sitios Web, Asesoría Tecnológica.
-            </p>
-            <h3  class="subtitulo">   
-            </span>Venta y mantenimiento.
-            </h3>
-            <p class="parrafos1">
-                Venta, mantenimiento, instalación y actualización de equipo. Instalación software, Antivirus, Configuración de S.O. Automatización computacional, optimizacion empresarial
-            </p>
+            <h2 class="titulo">Servicios</h2>
+            <div class="contenedor-servicios">
+                <img src="Img/pc34.png" alt="" class="imagen-servicios">         
+                <div class="contenedor-textos">
 
-          </div>
-        </div>
+                    <h3 class="subtitulo"> Desarrollo de software </h3>
+                    <p class="parrafos1">
+                        Desarrollo de software a la medida para agilizar procesos, 
+                        optimizar trabajo y los recursos de tu empresa
+                    </p>
+                    
+                    <h3  class="subtitulo"> Conectividad empresarial </h3>
+                    <p class="parrafos1">
+                        Servicios en Red, Internet e Intranet, Sitios Web, Asesoría Tecnológica.
+                    </p>
+
+                    <h3 class="subtitulo">  Venta y mantenimiento. </h3>
+                    <p class="parrafos1">
+                        Venta, mantenimiento, instalación y actualización de equipo. Instalación software, Antivirus, Configuración de S.O. 
+                        Automatización computacional, optimizacion empresarial
+                    </p>
+
+                </div>
+            </div>
         </section>
 
         <section class="productos">
             <h2 class="tituloPr">Productos</h2>
             <div class="contenedor-productos">
-             <img src="Img/pc26.png" alt="" class="imagen-productos">         
-              <div class="contenedor-textos">
-                <h3  class="subtitulo">   
-                </span>SICOIN
-                </h3>
-                <p class="parrafos1">
-                    Base de datos y gestiones integrales empresariales.
-                </p>
-                <h3  class="subtitulo">   
-                </span>MR. TEC
-                </h3>
-                <p class="parrafos1">
-                    Área de especialización y modulación de redes, centro de datos, programación de software a la medida, equipo especializado de computación, telefonía IP e innumerables soluciones de ingeniería aplicada en corelación de las ciencias computacionales.
-                </p>
-                <h3  class="subtitulo">   
-                </span>DATS
-                </h3>
-                <p class="parrafos1">
-                    DATS Manager es una aplicación web pensada para la gestión logística y financiera de datos (Distribuidores Autorizados TELCEL) de una manera fácil y eficaz.
-                </p>
+                <img src="Img/pc26.png" alt="" class="imagen-productos">         
+                <div class="contenedor-textos">
+
+                    <h3  class="subtitulo">  SICOIN </h3>
+                    <p class="parrafos1">
+                        Base de datos y gestiones integrales empresariales.
+                    </p>
+
+                    <h3  class="subtitulo"> MR. TEC </h3>
+                    <p class="parrafos1">
+                        Área de especialización y modulación de redes, centro de datos, programación de software a la medida, 
+                        equipo especializado de computación, telefonía IP e innumerables soluciones de ingeniería aplicada en corelación de las ciencias computacionales.
+                    </p>
+
+                    <h3  class="subtitulo"> DATS </h3>
+                    <p class="parrafos1">
+                        DATS Manager es una aplicación web pensada para la gestión logística y financiera de datos 
+                        (Distribuidores Autorizados TELCEL) de una manera fácil y eficaz.
+                    </p>
     
-              </div>
+                </div>
             </div>
-            </section>
+        </section>
 
         <section class="clientes">
             <h2 class="tituloCl">Clientes</h2>
-        <div class="contenedor">            
-        <div >
-          <img src="Img/clientes2.png" alt="" class="galeria-clts">
-       </div>
-       <div>
-        <img src="Img/clientes1.png" alt=""  class="galeria-clts">
-     </div>
-    </section>
-    <script type="text/javascript">
-        window.addEventListener("scroll",function(){
-            var header=document.querySelector("header");
-            header.classList.toggle("abajo",window.scrollY>0);
-        })
-    </script>
-<!--Script Color barra de búsqueda-->
-<script type="text/javascript">
-    window.addEventListener("focusin",function(){
-        var input=document.querySelector("input.buscar");
-        input.classList.toggle("selec", input.click);
-    })
-</script>
- 
-<script type="text/javascript">
-    window.addEventListener("focusout",function(){
-        var input=document.querySelector("input.selec");
-        input.classList.remove("selec",window.click);
-    })
-</script>
-<script type="text/javascript">
-    window.addEventListener("scroll",function(){
-        var ul=document.querySelector("ul.singup");
-        ul.classList.remove("_",window.scrollY>0);
-        ul.classList.toggle("abajo",window.scrollY>0);
-    })
-</script>
-<!--Scripts Productos -->
-<script type="text/javascript">
-    window.addEventListener("scroll",function(){
-        var div=document.querySelector("div.contenedor-productos");        
-        div.classList.toggle("abajo",window.scrollY>1200);
-    })
-</script>
+            <div class="contenedor">            
+                <div>
+                    <img src="Img/clientes2.png" alt="" class="galeria-clts">
+                </div>
+                <div>
+                    <img src="Img/clientes1.png" alt=""  class="galeria-clts">
+                </div>
+            </div>
+        </section>
 
-<script type="text/javascript">
-    window.addEventListener("scroll",function(){
-        var h2=document.querySelector("h2.tituloPr");        
-        h2.classList.toggle("abajo",window.scrollY>1200);
-    })
-</script>
-<!--Scripts Servicios-->
-<script type="text/javascript">
-    window.addEventListener("scroll",function(){
-        var h2=document.querySelector("h2.titulo");        
-        h2.classList.toggle("abajoServ",window.scrollY>600);
-    })
-</script>
-
-<script type="text/javascript">
-    window.addEventListener("scroll",function(){
-        var div=document.querySelector("div.contenedor-servicios");        
-        div.classList.toggle("abajoServ",window.scrollY>600);
-    })
-</script>
-
-<!--Script AbrirPopup Sing Up-->
-<script class="btnAbrirSU">
-    const btnSU=document.querySelector("#AbrirSU");
-
-    btnSU.addEventListener("click",()=>{
-        Abierto.showModal();
-    })
-    
-</script>
-
-<!--Script AbrirPopup Sing In-->
-<script class="btnAbrirSI">
-    const btnSI=document.querySelector("#AbrirSI");
-
-    btnSI.addEventListener("click",()=>{
-        Abiertosi.showModal();
-    })
-    
-</script>
-
-        </main>
         <footer class="footercomp">
             <div class="contenedor-footer">
             <div class="contenedor-foo">
@@ -260,24 +184,89 @@
             </div>
             </div>
         </footer>
-</body>
-<html lang="es">
-    <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Oswald:wght@200&display=swap" rel="stylesheet">
-  <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-  <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
-  <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Titillium Web" rel="stylesheet">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba</title>
-    <link rel="shortcut icon" href="Img/LogoMini.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/Estilos.css">
-</head>
 
-<body>
+
+
+
+        <script type="text/javascript">
+
+            window.addEventListener("scroll",function(){
+                var header=document.querySelector("header");
+                header.classList.toggle("abajo",window.scrollY>0);
+            })
+        </script>
+        <!--Script Color barra de búsqueda-->
+        <script type="text/javascript">
+            window.addEventListener("focusin",function(){
+                var input=document.querySelector("input.buscar");
+                input.classList.toggle("selec", input.click);
+            })
+        </script>
+        
+        <script type="text/javascript">
+            window.addEventListener("focusout",function(){
+                var input=document.querySelector("input.selec");
+                input.classList.remove("selec",window.click);
+            })
+        </script>
+        <script type="text/javascript">
+            window.addEventListener("scroll",function(){
+                var ul=document.querySelector("ul.singup");
+                ul.classList.remove("_",window.scrollY>0);
+                ul.classList.toggle("abajo",window.scrollY>0);
+            })
+        </script>
+        <!--Scripts Productos -->
+        <script type="text/javascript">
+            window.addEventListener("scroll",function(){
+                var div=document.querySelector("div.contenedor-productos");        
+                div.classList.toggle("abajo",window.scrollY>1200);
+            })
+        </script>
+
+        <script type="text/javascript">
+            window.addEventListener("scroll",function(){
+                var h2=document.querySelector("h2.tituloPr");        
+                h2.classList.toggle("abajo",window.scrollY>1200);
+            })
+        </script>
+        <!--Scripts Servicios-->
+        <script type="text/javascript">
+            window.addEventListener("scroll",function(){
+                var h2=document.querySelector("h2.titulo");        
+                h2.classList.toggle("abajoServ",window.scrollY>600);
+            })
+        </script>
+
+        <script type="text/javascript">
+            window.addEventListener("scroll",function(){
+                var div=document.querySelector("div.contenedor-servicios");        
+                div.classList.toggle("abajoServ",window.scrollY>600);
+            })
+        </script>
+
+        <!--Script AbrirPopup Sing Up-->
+        <script class="btnAbrirSU">
+            const btnSU=document.querySelector("#AbrirSU");
+
+            btnSU.addEventListener("click",()=>{
+                Abierto.showModal();
+            })
+            
+        </script>
+
+        <!--Script AbrirPopup Sing In-->
+        <script class="btnAbrirSI">
+            const btnSI=document.querySelector("#AbrirSI");
+
+            btnSI.addEventListener("click",()=>{
+                Abiertosi.showModal();
+            })
+            
+        </script>
+
+    </main>
+        
+</body>
+</html>
     
