@@ -17,8 +17,6 @@
     <link rel="shortcut icon" href="Img/LogoMini.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/Estilos.css">
     <link rel="stylesheet" href="CSS/login.css">
-    <link rel="stylesheet" href="CSS/modal.css">
-    
 </head>
 <style>
 @media screen and (max-width:400px)
@@ -30,51 +28,42 @@
 }
 </style>  
 <body>
-
-    
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="container" id="container">
-                <div class="form-container sign-up-container">
-                    <form action="#">
-                        <h1>Crear cuenta</h1>
-                        <input type="text" placeholder="Nombre" />
-                        <input type="email" placeholder="Correo" />
-                        <input type="password" placeholder="Contraseña" />
-                        <button>Registrarse</button>
-                    </form>
-                </div>
-                <div class="form-container sign-in-container">
-                    <form action="#">
-                        <h1>Iniciar sesion</h1>
-                        <input type="email" placeholder="Correo" />
-                        <input type="password" placeholder="Contraseña" />
-                        <a href="#">Olvido su contraseña?</a>
-                        <button>Iniciar sesion</button>
-                    </form>
-                </div>
-                <div class="overlay-container">
-                    <div class="overlay">
-                        <div class="overlay-panel overlay-left">
-                            <h1>Mucho gusto!</h1>
-                            <p>Ingresa tus datos personales para unirte a nosotros</p>
-                            <button class="ghost" id="signIn">Iniciar sesion</button>
-                        </div>
-                        <div class="overlay-panel overlay-right">
-                            <h1>Bienvenido de vuelta!</h1>
-                            <p>Para conectarte, inicia sesion con tus datos personales</p>
-                            
-                            <button class="ghost" id="signUp">Registrarse</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
     <header>
+        <!--Pop up Sing Up-->
+        <dialog class="singup-form" id="Abierto">
+            <h1>Sing Up Now</h1>
+            <section>
+                <input type="Name" class="EnterName" placeholder="Your Name">
+            </section>
+            <input type="Mail" class="EnterMail" placeholder="Your E-mail">
+            <p><span><input type="checkbox"class="chkbox"></span>Estoy de acuerdo con los términos de servicio</p>
+            <button type="button" class="btnsingUp">Sing up</button>
+            
+            <hr>
+
+            <h2 class="or">Or</h2>
+            <button type="button" class="btnsingIn">Access with Twitter</button>
+            <p class="doyou">Do you have an account? <a href="#">Sing in</a></p>
+        </dialog>
+        <!--Pop up Sing In-->
+        <dialog class="singin-form" id="Abiertosi">
+                <h1>Welcome back</h1>
+                <section>
+                <input type="Name" class="EnterName" placeholder="Name/E-mail">
+            </section>
+            <section>
+                <input type="Mail" class="EnterMail" placeholder="Password">
+            </section>
+            <!-- <p><span><input type="checkbox"class="chkbox"></span>Estoy de acuerdo con los términos de servicio</p>-->
+            <button type="button" class="btnsingUp">Sing in</button>
+    
+            <hr>
+
+            <h2 class="or">Or</h2>
+            <button type="button" class="btnsingIn2">Access with Twitter</button>
+            <p class="doyou">Do you still don't have an account? <a href="#">Sing up</a></p>
+        </dialog>
+
         <nav>        
             <label><img src="Img/cisteam_aguila.png" alt=""  class="logo"></label>
             <a href="#">Inicio</a>
@@ -83,15 +72,15 @@
             <a href="#">Contacto</a>
             <a href="#">Clientes</a>
             <label>
-                <input  class="buscar" type="search" placeholder="find in Ciste@m" required>
+                <input class="buscar" type="search" placeholder="find in Ciste@m" required>
                 <i class="fas fa-search"></i>
                 </input>
             </label>
             <label class="lbl2">
                 <img src="Img/lupa1.png" alt=""  class="lupa">           
             </label>
-            <ul class="singup" id=myBtn>
-                Sing up
+            <ul class="singup" id=AbrirSU>
+                        Sing up
             </ul>
             <ul class="singin" id=AbrirSI>
                 Sing in
@@ -197,6 +186,15 @@
         </footer>
 
 
+
+
+        <script type="text/javascript">
+
+            window.addEventListener("scroll",function(){
+                var header=document.querySelector("header");
+                header.classList.toggle("abajo",window.scrollY>0);
+            })
+        </script>
         <!--Script Color barra de búsqueda-->
         <script type="text/javascript">
             window.addEventListener("focusin",function(){
@@ -211,9 +209,62 @@
                 input.classList.remove("selec",window.click);
             })
         </script>
-        
+        <script type="text/javascript">
+            window.addEventListener("scroll",function(){
+                var ul=document.querySelector("ul.singup");
+                ul.classList.remove("_",window.scrollY>0);
+                ul.classList.toggle("abajo",window.scrollY>0);
+            })
+        </script>
+        <!--Scripts Productos -->
+        <script type="text/javascript">
+            window.addEventListener("scroll",function(){
+                var div=document.querySelector("div.contenedor-productos");        
+                div.classList.toggle("abajo",window.scrollY>1200);
+            })
+        </script>
 
-        <script src="JS/script.js"></script> <!--FUNCIONES JS-->
+        <script type="text/javascript">
+            window.addEventListener("scroll",function(){
+                var h2=document.querySelector("h2.tituloPr");        
+                h2.classList.toggle("abajo",window.scrollY>1200);
+            })
+        </script>
+        <!--Scripts Servicios-->
+        <script type="text/javascript">
+            window.addEventListener("scroll",function(){
+                var h2=document.querySelector("h2.titulo");        
+                h2.classList.toggle("abajoServ",window.scrollY>600);
+            })
+        </script>
+
+        <script type="text/javascript">
+            window.addEventListener("scroll",function(){
+                var div=document.querySelector("div.contenedor-servicios");        
+                div.classList.toggle("abajoServ",window.scrollY>600);
+            })
+        </script>
+
+        <!--Script AbrirPopup Sing Up-->
+        <script class="btnAbrirSU">
+            const btnSU=document.querySelector("#AbrirSU");
+
+            btnSU.addEventListener("click",()=>{
+                Abierto.showModal();
+            })
+            
+        </script>
+
+        <!--Script AbrirPopup Sing In-->
+        <script class="btnAbrirSI">
+            const btnSI=document.querySelector("#AbrirSI");
+
+            btnSI.addEventListener("click",()=>{
+                Abiertosi.showModal();
+            })
+            
+        </script>
+
     </main>
         
 </body>

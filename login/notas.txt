@@ -1,0 +1,14 @@
+Efecto: Registro, tarjeta dinamica
+Autor:Florin Pop
+Link:https://codepen.io/FlorinPop17/pen/vPKWjd
+Split: El login consta de html, css y javascript, primero en el html
+se hacen varios contenedores, uno principal para toda la tarjeta
+despues uno para donde se ingresara la informacion de Registro
+al mismo tiempo un panel para hacer la animacion de transicion y cambio
+de registro a inicio de sesion, dos para cada uno, el registro y 
+el inicio de sesion, se generan los contenedores de texto, para el ingreso de datos
+y un par de botones donde se confirmaran los datos o la transicion de registro a inicio de sesion
+En css se hace el formato de los contenedores, de los ingresos de datos
+los botones, y por ultimo se hicieron las animaciones de transicion entre el inicio y registro de sesion
+Por ultimo se tiene el archivo de javascript donde se le daran la funcion a los botones para
+cambiar el estado de los contenedores a activos o inactivos, y la confirmacion de datos.

@@ -1,0 +1,41 @@
+/* The Modal (background) */
+.navBar{
+  padding: 15px;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; 
+    z-index: 10; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    overflow-y: hidden;
+  }
+ 
+  /* Modal Content/Box */
+  .modal-content {
+    
+    width: 50%; /* Could be more or less, depending on screen size */
+    margin-left: auto;
+  	margin-right: auto;
+    padding: 100px 0;
+    vertical-align: middle;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

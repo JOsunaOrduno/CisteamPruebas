@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+.signup{
+    color: white;
+}
 /*Header ventana en top */
 header
 {
@@ -140,14 +143,14 @@ ul.singup{
     transition: 0.7s;
     }
 
-    #AbrirSU
+    #myBtn
 {
     text-decoration: none;
     color: #ffffff;
     
 }
 
-#AbrirSU:hover
+#myBtn:hover
 {
     text-decoration: none;
     color: #ffffff;
