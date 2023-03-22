@@ -38,18 +38,20 @@ signInButton.addEventListener('click', () => {
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
   modal.style.display = "block";
-  window.scrollTo = "0, 0"
+  document.body.classList.add("stop-scrolling");
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
+  document.body.classList.remove("stop-scrolling");
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    document.body.classList.remove("stop-scrolling");
   }
 }
 

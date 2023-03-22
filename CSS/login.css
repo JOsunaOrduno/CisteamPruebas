@@ -254,5 +254,17 @@
     text-decoration: none;
 }
 
+.social img{
+	position: relative;
+	top:2px;
+	width: 30px;
+}
 
-
+#tyc{
+	display: block;
+	width: 25px;
+}
+.modal form label{
+	display: block;
+	font-size: small;
+}
