@@ -403,7 +403,7 @@ color: #67ddf1;
 }
 
 /*Contenedor de CLientes*/
-.clientes{
+.clientes , .videos{
     padding: 60px 0;
     width: 90%;
     max-width: 1800px;
@@ -414,6 +414,8 @@ color: #67ddf1;
     box-shadow: 0 0 15px rgba(0, 1, 27, 0.897),
 10px 10px 5px rgba(5, 5, 43, 0.815), 0 0 80px #ffffffa2;
 }
+
+
 .contenedor{
     padding: 0px 0;
     max-width: 1500px;
@@ -422,6 +424,7 @@ color: #67ddf1;
     margin-left: 1mm;
     margin-right: 5mm;    
 }
+
 
 .parrafos1{
     font-size: 15px;
