@@ -111,6 +111,20 @@
 	z-index: 2;
 }
 
+.modal .container .Noti{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	height: 10%;
+	border-radius: 10px;
+	border: solid 2px red;
+	margin-top: 20px;
+	opacity: 0;
+	font-size: 9px;
+}
+
+
 /*Animacion, mueve el formulario a la izquierda*/
 .modal .container.right-panel-active .sign-in-container {
 	transform: translateX(100%);
